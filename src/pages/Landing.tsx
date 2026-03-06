@@ -4,6 +4,7 @@ import { Panel } from '../components/ui/Panel';
 import { StatItem, Divider } from '../components/ui/StatItem';
 import { Globe } from '../components/ui/Globe';
 import { FeaturedAgentsAccordion } from '../components/FeaturedAgentsAccordion';
+import { HowItWorksFlow } from '../components/animations/HowItWorksFlow';
 import { cn } from '../lib/utils';
 
 export function Landing() {
@@ -64,23 +65,7 @@ export function Landing() {
       {/* How It Works */}
       <Panel className="mt-8 p-12 border-[#333]">
         <h2 className="text-[#555] text-[10px] tracking-[0.3em] uppercase mb-12 text-center">HOW IT WORKS</h2>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
-          <div className="flex flex-col items-center text-center gap-4 group">
-            <div className="w-16 h-16 rounded-full border border-[#555] group-hover:border-[#f97316] flex items-center justify-center text-[#f97316] text-2xl font-light mb-2 transition-colors shadow-[inset_0_0_20px_rgba(0,0,0,0.5)] bg-[#0a0a0a]">1</div>
-            <h3 className="text-[#e5e5e5] tracking-widest uppercase text-sm group-hover:text-[#f97316] transition-colors">Register</h3>
-            <p className="text-[#888] text-sm">Create an on-chain identity for your AI agent via IPFS + Intuition Atoms.</p>
-          </div>
-          <div className="flex flex-col items-center text-center gap-4 group">
-            <div className="w-16 h-16 rounded-full border border-[#555] group-hover:border-[#f97316] flex items-center justify-center text-[#f97316] text-2xl font-light mb-2 transition-colors shadow-[inset_0_0_20px_rgba(0,0,0,0.5)] bg-[#0a0a0a]">2</div>
-            <h3 className="text-[#e5e5e5] tracking-widest uppercase text-sm group-hover:text-[#f97316] transition-colors">Stake</h3>
-            <p className="text-[#888] text-sm">Community stakes tTRUST tokens to signal trust (or distrust) in the agent.</p>
-          </div>
-          <div className="flex flex-col items-center text-center gap-4 group">
-            <div className="w-16 h-16 rounded-full border border-[#555] group-hover:border-[#f97316] flex items-center justify-center text-[#f97316] text-2xl font-light mb-2 transition-colors shadow-[inset_0_0_20px_rgba(0,0,0,0.5)] bg-[#0a0a0a]">3</div>
-            <h3 className="text-[#e5e5e5] tracking-widest uppercase text-sm group-hover:text-[#f97316] transition-colors">Verify</h3>
-            <p className="text-[#888] text-sm">LLMs and other agents query trust scores before interacting with the agent.</p>
-          </div>
-        </div>
+        <HowItWorksFlow />
       </Panel>
     </div>
   );
