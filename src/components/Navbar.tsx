@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { cn } from '../lib/utils';
+import { Logo } from './Logo';
 
 export function Navbar() {
   const location = useLocation();
@@ -25,7 +26,7 @@ export function Navbar() {
   return (
     <nav className="flex items-center justify-between py-6 border-b border-[#222] mb-8">
       <Link to="/" className="flex items-center gap-3">
-        <div className="w-4 h-4 bg-[#f97316] rounded-sm" />
+        <Logo className="w-8 h-8" />
         <span className="text-sm tracking-[0.3em] font-bold text-[#e5e5e5]">AGENT_ID</span>
       </Link>
       <div className="hidden md:flex items-center gap-2">
