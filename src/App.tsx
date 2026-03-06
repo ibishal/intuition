@@ -6,10 +6,12 @@ import { Explorer } from './pages/Explorer';
 import { AgentDetail } from './pages/AgentDetail';
 import { Register } from './pages/Register';
 import { Dashboard } from './pages/Dashboard';
+import { Preloader } from './components/Preloader';
 
 export default function App() {
   return (
     <BrowserRouter>
+      <Preloader />
       <div className="min-h-screen bg-[#050505] text-[#e5e5e5] p-4 md:p-8 font-mono flex flex-col max-w-7xl mx-auto">
         <Navbar />
         <main className="flex-1">
